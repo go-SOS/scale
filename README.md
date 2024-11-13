@@ -91,11 +91,11 @@ Setting up local environment is extremely easy and straight forward. Follow the 
 
 1. Clone the code locally using:
    ```
-   git clone https://github.com/pankajindevops/scaleapp
+   git clone https://github.com/pankajindevops/scale
    ```
 2. Switch to the code folder:
    ```
-   cd scaleapp
+   cd scale
    ```
 3. Create your feature or fix branch you plan to work on using:
    ```
