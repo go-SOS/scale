@@ -1,0 +1,477 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f1f5f9;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+  overflow-x: hidden;
+}
+
+/* MUI Font Changes */
+.css-ptkaw2-MuiDataGrid-root {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+}
+.css-ahj2mt-MuiTypography-root {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.css-levciy-MuiTablePagination-displayedRows {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.css-1futezt-MuiTypography-root {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+}
+/* MUI Font Changes */
+
+/* Calendar UI Updated */
+.rbc-toolbar-label {
+  font-weight: 700;
+}
+
+.rbc-btn-group {
+  font-weight: 600;
+}
+.rbc-toolbar {
+  background-color: #eff6ff;
+  /* background-color: #dbeafe; */
+  padding: 16px 16px;
+  border: #d1d5db 1px solid;
+  border-radius: 7px;
+}
+/* .rbc-active:hover, */
+.rbc-active {
+  background-color: #2563eb !important;
+  border-color: rgb(59, 145, 251);
+  color: #fff !important;
+}
+
+.rbc-active:hover {
+  background-color: #191277 !important;
+  border-color: rgb(59, 145, 251);
+  color: #fff !important;
+}
+
+.rbc-btn-group button:hover {
+  background-color: #2563eb !important;
+  border-color: rgb(59, 145, 251);
+  color: #fff !important;
+}
+
+.rbc-event {
+  background-color: #bfdbfe !important;
+  color: #000 !important;
+  border-color: #2563eb !important;
+  border-radius: 4px !important;
+}
+
+/* Calendar UI Updated */
+
+.gradientlight {
+  background: rgb(237, 246, 249); /* Light Blue */
+  background: linear-gradient(
+    158deg,
+    rgb(246, 244, 255) 0%,
+    rgb(220, 242, 255) 100%
+  );
+}
+
+.gradientText {
+  background: rgb(0, 15, 228); /* Light Blue */
+  background: linear-gradient(
+    158deg,
+    rgb(108, 76, 246) 0%,
+    rgb(8, 46, 71) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -text-fill-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  box-shadow: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9d9c9c;
+  outline: 1px solid #c5c6c6;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 7px; /* You can adjust the width as needed */
+  height: 7px; /* You can adjust the width as needed */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #c4c0c0; /* Change the color as needed */
+  border-radius: 6px; /* You can adjust the border radius */
+}
+
+/* Dashboard CSS */
+.iconstyle {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.pricetitle {
+  font-weight: 600;
+}
+
+.pricesubtitle {
+  font-size: 14px;
+}
+
+.paddingall {
+  padding: 10px 10px 10px 10px;
+}
+/* Dashboard CSS */
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 18px solid;
+}
+
+/* Custom CSS for CRM Elements */
+/* Base button styles */
+.pulseresetbutton {
+  background-color: #ef4444; /* bg-blue-300 */
+  min-width: 100px; /* min-w-[100px] */
+  color: #fdfdfd; /* text-slate-800 */
+  justify-content: center; /* justify-center */
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* space-x-2 */
+  border-radius: 0.25rem; /* rounded */
+  margin-bottom: 0.5rem; /* mb-2 */
+  cursor: pointer;
+  border: 1px solid #5fc1fe; /* Border color and width */
+}
+
+.pulsebuttonred {
+  background-color: #ef4444; /* bg-blue-300 */
+  min-width: 280px; /* min-w-[100px] */
+  color: #fdfdfd; /* text-slate-800 */
+  justify-content: center; /* justify-center */
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* space-x-2 */
+  border-radius: 0.25rem; /* rounded */
+  margin-bottom: 0.5rem; /* mb-2 */
+  cursor: pointer;
+  border: 1px solid #5fc1fe; /* Border color and width */
+}
+
+.pulsebuttongreen {
+  background-color: #15803d; /* bg-blue-300 */
+  min-width: 100px; /* min-w-[100px] */
+  color: #ffffff; /* text-slate-800 */
+  justify-content: center; /* justify-center */
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* space-x-2 */
+  border-radius: 0.25rem; /* rounded */
+  margin-bottom: 0.5rem; /* mb-2 */
+  cursor: pointer;
+  border: 1px solid #5fc1fe; /* Border color and width */
+}
+
+.pulsebuttonblue {
+  background-color: #2563eb; /* bg-blue-300 */
+  min-width: 100px; /* min-w-[100px] */
+  color: #ffffff; /* text-slate-800 */
+  justify-content: center; /* justify-center */
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* space-x-2 */
+  border-radius: 0.25rem; /* rounded */
+  margin-bottom: 0.5rem; /* mb-2 */
+  cursor: pointer;
+  border: 1px solid #5fc1fe; /* Border color and width */
+}
+
+.pulsebuttonblueDisabled {
+  opacity: 0.6; /* You can adjust opacity or other styles based on your design */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+  background-color: #90cdf4; /* bg-blue-300 */
+  min-width: 100px; /* min-w-[100px] */
+  color: #1a202c; /* text-slate-800 */
+  justify-content: center; /* justify-center */
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* space-x-2 */
+  border-radius: 0.25rem; /* rounded */
+  margin-bottom: 0.5rem; /* mb-2 */
+  cursor: pointer;
+  border: 1px solid #ccc; /* Border color and width */
+}
+
+/* Hover state styles */
+.pulsebuttonblue:hover {
+  background-color: #63b3ed; /* hover:bg-blue-400 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* hover:shadow-md */
+}
+
+/* Active/focus state styles (optional) */
+.pulsebuttonblue:active,
+.pulsebuttonblue:focus {
+  box-shadow: 0 0 0 3px rgba(38, 132, 255, 0.5); /* example focus ring */
+}
+
+/* Base button styles */
+.pulsebuttonwhite {
+  background-color: #ffffff; /* bg-white */
+  border: 1px solid #a0aec0; /* border */
+  min-width: 100px; /* min-w-[100px] */
+  color: #1a202c; /* text-slate-900 */
+  justify-content: center; /* justify-center */
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* space-x-2 */
+  border-radius: 0.25rem; /* rounded */
+  margin-bottom: 0.5rem; /* mb-2 */
+  cursor: pointer;
+}
+
+/* Hover state styles */
+.pulsebuttonwhite:hover {
+  background-color: #f7fafc; /* hover:bg-slate-50 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* hover:shadow-md */
+}
+
+.scaleformlabel {
+  display: block;
+  font-size: 16px;
+  font-weight: 600; /* 'semibold' is 600 in font-weight */
+  color: #4b5563; /* Tailwind's 'text-gray-600' corresponds to this hex code */
+  /* margin-bottom: 0.5rem;  */
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5; /* You can adjust the opacity value as needed */
+  pointer-events: none; /* This prevents the button from being clickable */
+}
+
+/* Active/focus state styles (optional) */
+.pulsebuttonwhite:active,
+.pulsebuttonwhite:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* example focus ring */
+}
+
+/* .react-confirm-alert-overlay {
+  backdrop-filter: blur(8px); 
+  z-index: 10; 
+  background: transparent !important;
+} */
+
+.css-1s7ytfs-MuiModal-root-MuiPopover-root {
+  max-width: 400px !important;
+}
+.css-g3hgs1-MuiBackdrop-root-MuiModal-backdrop {
+  max-width: 0px !important;
+}
+
+.css-esi9ax {
+  max-width: 40px !important;
+}
+
+.css-n6f90z {
+  max-width: 400px !important;
+}
+
+.react-confirm-alert-body {
+  min-width: 550px;
+  min-height: 180px !important;
+}
+
+.react-confirm-alert-button-group {
+  margin-top: 30px !important;
+}
+
+.react-confirm-alert-button-group > button:first-child {
+  outline: none;
+  background: #fca5a5 !important;
+  border: none;
+  display: inline-block;
+  padding: 6px 18px;
+  color: #070707 !important;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.react-confirm-alert-button-group > button:nth-child(2) {
+  outline: none;
+  background: #bbf7d0 !important;
+  border: none;
+  display: inline-block;
+  padding: 6px 18px;
+  color: #070707 !important;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Gantt Chart UI Starting */
+._3_ygE {
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  padding-left: 5px;
+}
+/* ._2B2zv {
+  max-width: 120px;
+} */
+
+/* Gantt Chart UI Ending */
+
+.scaleform {
+  margin-top: 0.25rem; /* mt-1 */
+  padding: 0.25rem; /* p-1 */
+  border-width: 1px; /* border */
+  width: 100%; /* w-full */
+  border-radius: 0.375rem; /* rounded-md */
+}
+
+.scaleform:focus {
+  border-color: #3b82f6; /* focus:border-blue-500 */
+  outline: none; /* focus:outline-none */
+  background-color: rgba(239, 246, 255, 0.5); /* focus:bg-blue-50/50 */
+}
+
+/* Backlog Static Buttons and Breadcrumb */
+.sticky-container {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 60px;
+  background-color: #f1f5f9;
+  z-index: 6;
+  padding-bottom: 20px;
+  margin-top: -70px !important;
+  padding-top: 40px !important;
+  margin-left: -20px !important;
+  margin-right: -20px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Backlog Static Buttons and Breadcrumb */
+
+/* Hide Jodit Credit */
+.jodit-status-bar__item {
+  display: none;
+}
+.jodit-status-bar__item-right {
+  display: none;
+}
+
+h1 {
+  font-size: 2em; /* 32px */
+}
+h2 {
+  font-size: 1.5em; /* 24px */
+}
+h3 {
+  font-size: 1.17em; /* 18.72px */
+}
+h4 {
+  font-size: 1em; /* 16px */
+}
+h5 {
+  font-size: 0.83em; /* 13.28px */
+}
+h6 {
+  font-size: 0.67em; /* 10.72px */
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Custom CSS for CRM Elements */
+
+/* Excalidraw whiteboard CSS */
+label[title="Library"] {
+  display: none;
+}
+
+.dropdown-menu-group {
+  display: none !important;
+}
+
+.HelpDialog__btn {
+  display: none !important;
+}
+
+.css-3bmhjh-MuiPaper-root-MuiPopover-paper {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(165, 165, 165);
+  box-shadow: none !important;
+}
+
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 0 !important;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.css-1uvydh2 {
+  padding: 0 !important;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}

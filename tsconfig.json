@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.jsx", "src/app/features/backlog/layout.js", "src/app/product/timeline/layout.js", "src/app/features/board/layout.js", "src/app/features/sprint/layout.js", "src/app/product/kanban/layout.js", "src/app/features/roadmap/layout.js", "src/app/features/calendar/layout.js", "src/app/about-us/layout.js", "src/app/privacy-policy/layout.js", "src/app/terms-of-service/layout.js", "src/app/solutions/sales/layout.js", "src/app/solutions/project-management/layout.js", "src/app/solutions/product-development/layout.js", "src/app/solutions/operations/layout.js", "src/app/solutions/marketing/layout.js", "src/app/solutions/information-technology/layout.js", "src/app/solutions/human-resources/layout.js", "src/app/register/layout.js", "src/app/reset/[token]/layout.js", "src/app/cookie-policy/layout.js", "src/app/features/document/layout.js", "src/app/features/filter/layout.js", "src/app/features/reminder/layout.js", "src/app/features/import/layout.js", "src/app/features/holiday/layout.js", "src/app/product/about-pages/layout.js", "src/app/product/bookmark/layout.js", "src/app/product/team-charter/layout.js", "src/app/product/dashboard/layout.js", "src/app/forgot-password/layout.js", "src/app/login/layout.js"],
+  "exclude": ["node_modules"]
+}

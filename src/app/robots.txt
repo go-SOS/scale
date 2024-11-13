@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /reset/
+Disallow: /terms-of-service/
+Disallow: /privacy-policy/
+Disallow: /cookie-policy/
+
+Sitemap: https://scale.ac/sitemap.xml
