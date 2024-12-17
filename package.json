@@ -40,7 +40,7 @@
     "gantt-task-react": "^0.3.9",
     "jodit-react": "^4.1.2",
     "jspdf": "^2.5.1",
-    "mongodb": "^6.3.0",
+    "mongodb": "^6.11.0",
     "mongoose": "^8.0.4",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
