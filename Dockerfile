@@ -29,4 +29,4 @@ RUN chmod +x installdb.sh && ./installdb.sh
 EXPOSE 3000 
 
 # Start the Next.js app in development mode
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "dev","&"]
