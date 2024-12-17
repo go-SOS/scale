@@ -26,7 +26,7 @@ RUN npm install && npm install next
 RUN chmod +x installdb.sh && ./installdb.sh
 
 # Expose the ports for Next.js app and MongoDB
-EXPOSE 3000 27017
+EXPOSE 3000 
 
 # Start the Next.js app in development mode
 CMD ["npm", "run", "dev"]
