@@ -9,10 +9,11 @@ RUN apt update && apt install -y \
     nodejs \
     npm \
     curl \
-    gnupg 
+    gnupg
 
 # Set /app as the Working Directory on Docker filesystem
 WORKDIR /app
+COPY package.json  ./
 
 
 COPY . .
