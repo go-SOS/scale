@@ -1,41 +1,31 @@
-# Stage 1: Build
+FROM ubuntu:22.04
 
-FROM node:21-alpine AS build
+# Set environment variables to avoid prompts and for better apt performance
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install required packages: curl, gnupg, git, nodejs, npm
+RUN apt update && apt install -y \
+    git \
+    nodejs \
+    npm \
+    curl \
+    gnupg 
 
 # Set /app as the Working Directory on Docker filesystem
 WORKDIR /app
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
 
-# Install dependencies
-RUN npm install
-
-# Copy the rest of the application code
 COPY . .
 
-# Build the Next.js app
-RUN npm run build
+# Install dependencies
+RUN npm install && npm install next
 
 
-# Stage 2: Run
+# Make installdb.sh executable and run it
+RUN chmod +x installdb.sh && ./installdb.sh
 
-FROM node:21-alpine AS run
+# Expose the ports for Next.js app and MongoDB
+EXPOSE 3000 27017
 
-# Set /app as the Working Directory on Docker filesystem
-WORKDIR /app
-
-# Copy only necessary files from the build stage
-COPY --from=build /app/package*.json ./
-COPY --from=build /app/.next ./.next
-COPY --from=build /app/public ./public
-
-# Install only production dependencies
-RUN npm install --only=production
-
-# Expose the port that your Next.js app will run on
-EXPOSE 3000
-
-# Start the Next.js app
-CMD ["npm", "start"]
-
+# Start the Next.js app in development mode
+CMD ["npm", "run", "dev"]
