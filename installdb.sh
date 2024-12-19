@@ -1,5 +1,5 @@
 # Define variables
-MONGO_HOST="localhost" # Change to your MongoDB host if not localhost
+MONGO_HOST="127.0.0.1" # Change to your MongoDB host if not localhost
 MONGO_PORT="27017"     # Change to your MongoDB port if not default
 USERNAME="scuser"      # Replace with your desired username
 PASSWORD="pass"        # Replace with your desired password
