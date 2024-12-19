@@ -17,14 +17,15 @@ COPY package*.json ./
 COPY . .
 
 # Install dependencies
-RUN npm install && npm install next && npm papaparse
+RUN npm install && npm install next && npm install papaparse
 
 
 # Make installdb.sh executable and run it
 RUN chmod +x installdb.sh && ./installdb.sh
 RUN npm run build
 # Expose the ports for Next.js app and MongoDB
-EXPOSE 3000 27017
+EXPOSE 3000 
+EXPOSE 27017
 
 # Start the Next.js app in development mode
 CMD ["npm", "start" ]
