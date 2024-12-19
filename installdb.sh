@@ -16,11 +16,18 @@ mongod --fork --logpath /var/log/mongod.log --bind_ip 0.0.0.0
 
 # Execute the MongoDB command via mongosh
 mongosh --host $MONGO_HOST --port $MONGO_PORT <<EOF
-use sc;
+use scaledb;
 db.createUser({
   user: "$USERNAME",
   pwd: "$PASSWORD",
+
+
+  
   roles: [
+
+    { role: "dbAdmin", db: "scaledb" },
+    { role: "userAdmin", db: "scaledb" },
+    { role: "readWrite", db: "scaledb" },
     { role: "root", db: "admin" }
   ]
 });
