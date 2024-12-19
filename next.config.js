@@ -2,9 +2,9 @@
 const nextConfig = {
     reactStrictMode: false,
     env: {
-        NEXTAUTH_URL: "http://localhost:3000",
-        MONGODB_URI: "mongodb://scuser:pass@127.0.0.1/sc",        
-        MONGODB_URL: "mongodb://localhost:27017/",
+        NEXTAUTH_URL: "http://127.0.0.1:3000",
+        MONGODB_URI: "mongodb://scuser:pass@127.0.0.1/scaledb",        
+        MONGODB_URL: "mongodb://127.0.0.1:27017/",
         EMAIL_ADDRESS: "no-reply@scale.ac",
         AWS_ACCESS_KEY_ID: '',
         AWS_SECRET_ACCESS_KEY: '',
