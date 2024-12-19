@@ -28,3 +28,5 @@ db.createUser({
 EOF
 
 echo "User '$MONGO_USER' created successfully with roles for '$MONGO_DB'."
+exec "$@"
+
