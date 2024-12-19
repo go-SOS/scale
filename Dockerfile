@@ -13,9 +13,7 @@ RUN apt update && apt install -y \
 
 # Set /app as the Working Directory on Docker filesystem
 WORKDIR /app
-COPY package.json  ./
-
-
+COPY package*.json ./
 COPY . .
 
 # Install dependencies
