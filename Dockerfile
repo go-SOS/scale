@@ -26,6 +26,5 @@ RUN npm run build
 # Expose the ports for Next.js app and MongoDB
 EXPOSE 3000 
 EXPOSE 27017
-ENTRYPOINT [./dbinit.sh]
-# Start the Next.js app in development mode
+ENTRYPOINT ["/bin/bash", "/app/dbinit.sh"]
 CMD ["npm", "start" ]
