@@ -20,8 +20,8 @@ COPY . .
 RUN npm install && npm install next && npm install papaparse
 
 
-RUN chmod +x  dbinit.sh
 RUN chmod +x dbinstall.sh && ./dbinstall.sh
+RUN chmod +x  dbinit.sh
 RUN npm run build
 # Expose the ports for Next.js app and MongoDB
 EXPOSE 3000 
