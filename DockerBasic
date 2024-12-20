@@ -1,5 +1,0 @@
-apt update && DEBIAN_FRONTEND=noninteractive apt install -y git nodejs npm 
-chmod +x installdb.sh 
-./installdb.sh
-npm install  && npm install next
-npm run dev
