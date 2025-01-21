@@ -41,7 +41,7 @@
     "jodit-react": "^4.1.2",
     "jspdf": "^2.5.1",
     "mongodb": "^6.3.0",
-    "mongoose": "^8.0.4",
+    "mongoose": "^8.9.5",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
     "next-nprogress-bar": "^2.1.2",
