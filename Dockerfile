@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:24.10
 
 # Set environment variables to avoid prompts and for better apt performance
 ENV DEBIAN_FRONTEND=noninteractive
